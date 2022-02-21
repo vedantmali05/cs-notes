@@ -12,8 +12,13 @@
     transition: all .2s linear;
     outline: none;
     border: none;
-    color: var(--text);
+    color: var(--text-black);
     /* border: 1px solid #07f; */
+}
+
+*::selection {
+    background: var(--text-black);
+    color: var(--white);
 }
 
 :root {
@@ -21,7 +26,8 @@
     --pink: #FD5DAF;
     --purple: #6B7FFD;
     --blue: #34C1FD;
-    --text: #1F1F26;
+    --text-black: #1F1F26;
+    --text-white: #e8eaed;
     --links: #FD5DAF25;
     --codes: #34C1FD25;
     --smooth-dark: #1F1F2660;
@@ -39,6 +45,10 @@ body {
     background: var(--white);
     min-height: 100vh;
     min-width: 300px;
+}
+
+img {
+    max-width: 100%;
 }
 
 button {

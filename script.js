@@ -1,3 +1,22 @@
+// ///////////////// HEADER CSS ON SCROLL
+
+let header = document.querySelector('.notes-header');
+
+console.log(header);
+
+
+
+window.onscroll = function() {
+    if (window.pageYOffset > 100) {
+        header.style.boxShadow = '0px 0px 10px var(--smooth-light)';
+    } else {
+        header.style.boxShadow = 'none';
+    }
+}
+
+
+// ///////////////// MENU OPEN/CLOSE 
+
 let menuBtn = document.querySelector(".menu-btn"),
     headerNavWrapper = document.querySelector(".header-nav-wrapper");
 

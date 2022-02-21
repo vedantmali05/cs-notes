@@ -9,8 +9,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="global-style.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style-global.css">
+    <link rel="stylesheet" href="style-header.css">
+    <link rel="stylesheet" href="style-main.css">
 
     <!-- FONTS -->
     <!-- Font - POPPINS, LORA, ROBOTO MONO, ROBOTO -->
@@ -33,16 +34,17 @@
         <!-- HEADER BREADCRUMB -->
         <section class="header-breadcrumb-wrapper">
             <ul class="header-breadcrumb">
+                <!-- LOGO -->
                 <li>
                     <a href="#" class="logo">LOGO</a>
                 </li>
+                <!-- Breadcrumb pages sequence -->
                 <li>
                     <span class="header-breadcrumb-slash">
                         <i class="bi bi-slash-lg"></i>
                     </span>
                     <a href="#">Software Enggineering</a>
                 </li>
-
             </ul>
         </section>
         <!-- MENU BTN -->
@@ -53,16 +55,20 @@
         </section>
         <!-- HEADER NAVIGATION -->
         <nav class="header-nav-wrapper">
+            <!-- MAIN MENU -->
             <ul class="header-nav">
+                <!-- li - Topics on this page -->
                 <li class="submenu-btn submenu-btn-this-page">
-                    <a href="#">
+                    <a>
                         This Page
+                        <!-- Expand Arrow -->
                         <span class="expand-nav show-submenu">
                             <svg width="192" height="192" fill="#000" viewBox="0 0 192 192">
                                 <path fill-rule="evenodd" d="M96 146c-1.0609 0-2.0783-.421-2.8284-1.172L1.17158 52.8284c-1.562106-1.5621-1.562106-4.0947 0-5.6568 1.56209-1.5621 4.09476-1.5621 5.65684 0L96 136.343l89.172-89.1714c1.562-1.5621 4.094-1.5621 5.656 0 1.563 1.5621 1.563 4.0947 0 5.6568L98.8284 144.828C98.0783 145.579 97.0609 146 96 146z"/>
                               </svg>
                         </span>
                     </a>
+                    <!-- SUBMENU - Topics on this page list -->
                     <ul class="submenu submenu-this-page">
                         <li>
                             <a href="#"><span><i class="bi bi-hash"></i></span> Topic 1</a>
@@ -84,15 +90,18 @@
                         </li>
                     </ul>
                 </li>
+                <!-- li - Subjects available on website -->
                 <li class="submenu-btn submenu-btn-subject">
                     <a>
                         Subjects
+                        <!-- Expand Arrow -->
                         <span class="expand-nav show-submenu">
                             <svg width="192" height="192" fill="#000" viewBox="0 0 192 192">
                                 <path fill-rule="evenodd" d="M96 146c-1.0609 0-2.0783-.421-2.8284-1.172L1.17158 52.8284c-1.562106-1.5621-1.562106-4.0947 0-5.6568 1.56209-1.5621 4.09476-1.5621 5.65684 0L96 136.343l89.172-89.1714c1.562-1.5621 4.094-1.5621 5.656 0 1.563 1.5621 1.563 4.0947 0 5.6568L98.8284 144.828C98.0783 145.579 97.0609 146 96 146z"/>
                               </svg>
                         </span>
                     </a>
+                    <!-- Submenu - Subjects available on this page -->
                     <ul class="submenu submenu-subjects">
                         <li>
                             <a href="#">Microprocessors</a>
@@ -105,12 +114,33 @@
                         </li>
                     </ul>
                 </li>
+                <!-- ABOUT Page Link -->
                 <li>
                     <a href="#">About</a>
                 </li>
             </ul>
         </nav>
+        <!-- MENU ENDS -->
     </header>
+    <!-- HEADER ENDS -->
+
+    <!-- MAIN SECTION -->
+    <main class="notes-main" id="notes-main">
+        <!-- Course Intro -->
+        <section class="course-intro-wrapper">
+            <!-- COURSE CONTENTS -->
+            <div class="course-intro-contents">
+                <div class="eyebrow">0.0</div>
+                <h1 class="course-heading">Software Enggineering</h1>
+                <p class="course-intro-para">
+                    This course will explore all the aspects of Software Enggineering attaining the skill of using relevant software process model for developing software products.
+                </p>
+            </div>
+            <figure class="course-intro-hero">
+                <img src="images/hero.png" alt="">
+            </figure>
+        </section>
+    </main>
 
     <script src="script.js" async defer></script>
 </body>
