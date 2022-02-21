@@ -1,0 +1,35 @@
+.notes-main {
+    padding: 1rem 2rem;
+    width: min(100%, 100rem);
+    margin: 6rem auto;
+}
+
+.course-intro-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.course-intro-wrapper .course-intro-contents {
+    max-width: 60rem;
+    flex: 1 1 40%;
+    min-width: 35rem;
+}
+
+.course-intro-wrapper .course-intro-hero {
+    flex: 1 1 45%;
+}
+
+.course-intro-wrapper .course-intro-contents>* {
+    margin: 1rem 0;
+}
+
+.course-intro-wrapper :is(h1) {
+    font: 500 3rem/130% "Poppins", sans-serif;
+}
+
+.course-intro-wrapper :is(.eyebrow, p) {
+    font-size: 1.6rem;
+}
