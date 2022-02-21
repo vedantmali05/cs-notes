@@ -1,32 +1,43 @@
 // ///////////////// HEADER CSS ON SCROLL
 
-let header = document.querySelector('.notes-header');
-
-console.log(header);
-
-
-
+let header = document.querySelector(".notes-header");
 window.onscroll = function() {
     if (window.pageYOffset > 100) {
-        header.style.boxShadow = '0px 0px 10px var(--smooth-light)';
+        header.style.boxShadow = "0px 0px 10px var(--smooth-light)";
     } else {
-        header.style.boxShadow = 'none';
+        header.style.boxShadow = "none";
+    }
+};
+
+// ////////////  Function For DROPDOWN Elements
+function dropDown(
+    resizerElem,
+    resizerBtn,
+    givenClass,
+    iconOpen,
+    iconClose = iconOpen
+) {
+    resizerElem.classList.toggle(givenClass);
+    if (headerNavWrapper.classList.contains(givenClass)) {
+        resizerBtn.innerHTML = iconOpen;
+    } else {
+        resizerBtn.innerHTML = iconClose;
     }
 }
 
-
-// ///////////////// MENU OPEN/CLOSE 
+// ///////////////// MENU OPEN/CLOSE
 
 let menuBtn = document.querySelector(".menu-btn"),
     headerNavWrapper = document.querySelector(".header-nav-wrapper");
 
 menuBtn.addEventListener("click", function() {
-    headerNavWrapper.classList.toggle("show-menu");
-    if (headerNavWrapper.classList.contains("show-menu")) {
-        menuBtn.innerHTML = '<i class="bi bi-x-lg"></i>';
-    } else {
-        menuBtn.innerHTML = '<i class="bi bi-grid"></i>';
-    }
+    dropDown(
+        headerNavWrapper,
+        menuBtn,
+        "show-menu",
+        `<i class="bi bi-x-lg"></i>`,
+        `<i class="bi bi-grid"></i>`
+    );
 });
 
 let submenuBtn = document.querySelectorAll(".submenu-btn"),
@@ -42,3 +53,17 @@ for (let i = 0; i < submenu.length; i++) {
         submenu[i].classList.toggle("show-submenu");
     });
 }
+
+// ///////////////// INDEX OPEN/CLOSE
+
+let indexTitle = document.querySelector(".index-title"),
+    indexListBox = document.querySelector(".index-list-box");
+
+indexTitle.addEventListener("click", function() {
+    dropDown(
+        indexListBox,
+        indexTitle,
+        "show-index",
+        indexTitle.innerHTML
+    );
+});

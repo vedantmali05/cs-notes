@@ -4,6 +4,9 @@
     margin: 6rem auto;
 }
 
+
+/* ////////////// INTRODUCTION SECTION */
+
 .course-intro-wrapper {
     display: flex;
     justify-content: space-between;
@@ -15,7 +18,7 @@
 .course-intro-wrapper .course-intro-contents {
     max-width: 60rem;
     flex: 1 1 40%;
-    min-width: 35rem;
+    min-width: 24rem;
 }
 
 .course-intro-wrapper .course-intro-hero {
@@ -27,9 +30,162 @@
 }
 
 .course-intro-wrapper :is(h1) {
-    font: 500 3rem/130% "Poppins", sans-serif;
+    font: 600 3rem/130% "Lora", sans-serif;
+    color: var(--blue);
 }
 
 .course-intro-wrapper :is(.eyebrow, p) {
     font-size: 1.6rem;
+}
+
+
+/* ///////////////////// TABLE OF CONTENTS/INDEX */
+
+.index-wrapper {
+    margin: 3rem 0;
+    width: 100%;
+    border: 1px solid var(--purple);
+    border-left: none;
+    border-right: none;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.index-wrapper .index-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    cursor: pointer;
+    width: min(100%, 35rem);
+    order: -1;
+}
+
+.index-title h2 {
+    font: 500 3rem/130% "Lora", serif;
+}
+
+.index-wrapper .index-title svg {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--text);
+}
+
+.index-list-box {
+    margin: 1rem;
+    font-size: 1.6rem;
+    transition: all .5s ease;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.index-list-box.show-index {
+    max-height: 100rem;
+    transition: all 1s ease;
+}
+
+.index-list-box.show-index~.index-title svg {
+    transform: rotate(180deg);
+}
+
+.index-list-box li {
+    margin: 2rem 0;
+}
+
+.index-list-box li a {
+    padding: .1rem 1rem;
+    border-radius: 5px;
+}
+
+.index-list-box li a:hover {
+    background: var(--links);
+}
+
+
+/* ////////////////////////// NEXT AND PREV PROSE LINKS */
+
+.adj-prose-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.adj-prose-link {
+    padding: 2rem;
+    flex: 1;
+    min-width: 14rem;
+}
+
+.adj-prose-link:hover {
+    background: var(--links-light);
+}
+
+.adj-prose-wrapper .direction {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem 0;
+}
+
+.adj-prose-wrapper .direction :is(span, i) {
+    font-size: 1.4rem;
+    color: var(--purple);
+    font-weight: 500;
+}
+
+.adj-prose-wrapper .adj-prose-topic {
+    font: 600 3rem "Lora", serif;
+}
+
+.adj-prose-wrapper .prose-description {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+}
+
+
+/* /////////////////// AUTHOR ATTRIBUTION */
+
+.author-attr-wrapper {
+    padding: 2rem;
+    margin: 6rem 0 4rem 0;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    border: 2px solid var(--blue);
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.author-attr-wrapper :is(p) {
+    flex: 1 1 45%;
+    padding: 2rem 0;
+}
+
+.author-attr-wrapper :is(.author-attr-illu) {
+    flex: 1;
+    min-width: 17rem;
+}
+
+.author-attr-wrapper .author-name {
+    font-weight: 600;
+}
+
+.author-attr-wrapper .heart i {
+    color: var(--pink);
+}
+
+.author-attr-wrapper a {
+    text-decoration: underline;
+}
+
+
+/* *********** MEDIA QUERIES **************** */
+
+@media (min-width: 375px) {
+    .course-intro-wrapper .course-intro-contents,
+    .adj-prose-link,
+    .author-attr-wrapper :is(p) {
+        min-width: 35rem;
+    }
 }
