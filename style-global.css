@@ -24,13 +24,13 @@
 :root {
     --white: #ffffff;
     --pink: #FD5DAF;
+    --pink-light: #fd5db040;
     --purple: #4e65ff;
+    --purple-light: #4e65ff25;
     --blue: #34C1FD;
+    --blue-light: #deeafd;
     --text-black: #1F1F26;
     --text-white: #e8eaed;
-    --links: #fd5db040;
-    --codes: #34C1FD25;
-    --links-light: #4e65ff25;
     --smooth-dark: #1F1F2660;
     --smooth-light: #1F1F2625;
 }
