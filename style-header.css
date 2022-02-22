@@ -85,7 +85,7 @@
 }
 
 .header-nav :is(a):hover {
-    background: var(--links);
+    background: var(--pink-light);
     cursor: pointer;
 }
 
@@ -109,7 +109,7 @@
 .header-nav :is(.expand-nav svg) {
     width: 1.6rem;
     height: 2.5rem;
-    fill: var(--text);
+    fill: var(--text-black);
     position: relative;
     top: 0.5rem;
 }
