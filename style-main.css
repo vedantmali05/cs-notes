@@ -34,6 +34,10 @@
     color: var(--blue);
 }
 
+.course-intro-wrapper :is(.eyebrow) {
+    margin-top: 3rem;
+}
+
 .course-intro-wrapper :is(.eyebrow, p) {
     font-size: 1.6rem;
 }
@@ -79,6 +83,16 @@
     max-height: 0;
 }
 
+.index-list-box ul {
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    border-left: 2px solid var(--smooth-dark);
+}
+
+.index-list-box ul li {
+    margin: 1rem 0;
+}
+
 .index-list-box.show-index {
     max-height: 100rem;
     transition: all 1s ease;
@@ -93,7 +107,6 @@
 }
 
 .index-list-box li a {
-    padding: .1rem 1rem;
     border-radius: 5px;
 }
 
