@@ -1,0 +1,137 @@
+.topic-prose-wrapper {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prose-heading-1 {
+    font: 600 3.5rem/130% "Lora", serif;
+    padding-top: 4rem;
+}
+
+.prose-heading-1:not(:first-child) {
+    border-top: 1px solid var(--text-black);
+}
+
+.prose-heading-2,
+.key-header {
+    font: 600 2.5rem/130% "Lora", serif;
+    margin: .5rem 0;
+}
+
+.prose-heading-3 {
+    font: 600 2rem/130% "Lora", sans-serif;
+    margin: .5rem 0;
+}
+
+.prose-para {
+    max-width: 70ch;
+    font: 400 1.6rem/130% "Poppins", sans-serif;
+    margin-bottom: 1.2em;
+}
+
+.prose-para :is(a, kbd, code) {
+    padding: 0 .5rem;
+    border-radius: 3px;
+    line-height: 160%;
+}
+
+.prose-para a {
+    background: var(--pink-light);
+}
+
+.prose-para a:hover {
+    text-decoration: underline;
+}
+
+.prose-para kbd {
+    font: 600 16px/130% "Roboto Mono";
+    border: 1px solid var(--text-black);
+}
+
+.prose-para code {
+    font: 600 16px/130% "Roboto Mono";
+    background: var(--purple-light);
+}
+
+.subtopic-2>*:not(.prose-heading-3) {
+    margin-left: 2rem;
+}
+
+.prose-list li {
+    list-style: decimal;
+    list-style-position: outside;
+}
+
+.prose-list li::marker {
+    color: var(--purple);
+    font-weight: 600;
+}
+
+.prose-list li :is(ul, ol) {
+    margin: 1rem 0 1rem 2rem;
+}
+
+.prose-list li :is(ul, ol) li {
+    list-style: disc;
+}
+
+
+/* //////////////////// KEY BOXES */
+
+.key {
+    border: 1px solid;
+    margin: 2rem 0;
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+}
+
+.key-header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2rem;
+    margin-bottom: .5rem;
+}
+
+.key-content {
+    margin-left: 4.5rem;
+}
+
+.key.callout {
+    border-color: var(--pink);
+}
+
+.key.tip,
+.key.simplification {
+    border-color: var(--purple);
+}
+
+.key.definition {
+    border-color: var(--blue);
+}
+
+.key.additonal-point,
+.key.mathematical-formula {
+    border-color: var(--text-black);
+}
+
+.key.mathematical-formula .key-content * {
+    font: italic 400 2.5rem/130% "Lora", serif;
+}
+
+.key.code {
+    background: var(--code-box);
+    border-color: var(--smooth-dark);
+    border-radius: 2px;
+}
+
+.key.code {
+    font: 500 16px/130% "Roboto Mono";
+}
+
+
+/* *********** MEDIA QUERIES **************** */
+
+@media (min-width: 375px) {}
