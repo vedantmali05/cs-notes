@@ -50,14 +50,17 @@
     top: calc(7rem - 2px);
     left: -100%;
     padding: 4rem 0;
+    overflow: hidden;
     height: calc(100vh - 7rem);
     background: var(--white);
     border-radius: 0 10px 10px 0;
     box-shadow: 0 10px 30px 0 var(--smooth-dark);
+    max-width: 0px;
 }
 
 .header-nav-wrapper.show-menu {
     left: 0;
+    max-width: 10000px;
 }
 
 .header-nav {
@@ -135,6 +138,7 @@
         border-radius: 0;
         box-shadow: none;
         margin-left: auto;
+        max-width: 100%;
     }
     .header-nav {
         display: flex;
