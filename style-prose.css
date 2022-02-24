@@ -11,13 +11,20 @@
 }
 
 .prose-heading-1:not(:first-child) {
-    border-top: 1px solid var(--text-black);
+    border-top: 2px solid var(--text-black);
+    padding-top: 3rem;
 }
 
 .prose-heading-2,
 .key-header {
     font: 600 2.5rem/130% "Lora", serif;
     margin: .5rem 0;
+}
+
+.prose-heading-2:not(.key-header .prose-heading-2) {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--smooth-dark);
 }
 
 .prose-heading-3 {
@@ -27,8 +34,13 @@
 
 .prose-para {
     max-width: 70ch;
-    font: 400 1.6rem/130% "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.4rem, 3vw, 1.6rem);
     margin-bottom: 1.2em;
+}
+
+.prose-para :is(.highlight) {
+    font-weight: 600;
 }
 
 .prose-para :is(a, kbd, code) {
@@ -62,6 +74,11 @@
 .prose-list li {
     list-style: decimal;
     list-style-position: outside;
+    margin-left: 2rem;
+}
+
+ul.prose-list li {
+    list-style: square;
 }
 
 .prose-list li::marker {
@@ -75,6 +92,10 @@
 
 .prose-list li :is(ul, ol) li {
     list-style: disc;
+}
+
+.sources * {
+    font: italic 1.4rem/130% "Lora", serif;
 }
 
 
