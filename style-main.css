@@ -83,7 +83,8 @@
     max-height: 0;
 }
 
-.index-list-box ul {
+.index-list-box ul,
+.header-nav .submenu .submenu-subtopics {
     padding-left: 1rem;
     margin-bottom: 2rem;
     border-left: 2px solid var(--smooth-dark);
