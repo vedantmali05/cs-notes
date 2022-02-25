@@ -121,12 +121,14 @@
 .adj-prose-wrapper {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 7rem;
 }
 
 .adj-prose-link {
     padding: 2rem;
     flex: 1;
     min-width: 20rem;
+    border: 1px solid var(--purple-light);
 }
 
 .adj-prose-link:hover {
