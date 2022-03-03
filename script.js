@@ -56,14 +56,11 @@ for (let i = 0; i < submenu.length; i++) {
 
 // ///////////////// INDEX OPEN/CLOSE
 
-let indexTitle = document.querySelector(".index-title"),
-    indexListBox = document.querySelector(".index-list-box");
+let indexTitle = document.querySelectorAll(".index-title"),
+    indexListBox = document.querySelectorAll(".index-list-box");
 
-indexTitle.addEventListener("click", function() {
-    dropDown(
-        indexListBox,
-        indexTitle,
-        "show-index",
-        indexTitle.innerHTML
-    );
-});
+for (let i = 0; i < indexTitle.length; i++) {
+    indexTitle[i].addEventListener("click", function() {
+        dropDown(indexListBox[i], indexTitle[i], "show-index", indexTitle[i].innerHTML);
+    });
+}
