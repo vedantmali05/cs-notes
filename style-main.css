@@ -25,7 +25,8 @@
     flex: 1 1 45%;
 }
 
-.course-intro-wrapper .course-intro-contents>* {
+.course-intro-wrapper .course-intro-contents>*,
+.course-intro-para {
     margin: 1rem 0;
 }
 
@@ -38,7 +39,8 @@
     margin-top: 3rem;
 }
 
-.course-intro-wrapper :is(.eyebrow, p) {
+.course-intro-wrapper :is(.eyebrow, p),
+.course-intro-para {
     font-size: 1.6rem;
 }
 
@@ -48,9 +50,7 @@
 .index-wrapper {
     margin: 3rem 0;
     width: 100%;
-    border: 1px solid var(--purple);
-    border-left: none;
-    border-right: none;
+    border-bottom: 1px solid var(--purple);
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@
     justify-content: space-between;
     gap: 2rem;
     cursor: pointer;
-    width: min(100%, 35rem);
+    width: min(100%, 50rem);
     order: -1;
 }
 
