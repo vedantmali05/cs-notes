@@ -49,12 +49,25 @@
     line-height: 160%;
 }
 
-.prose-para a {
+.prose-para a,
+.prose-figure figcaption a {
     background: var(--pink-light);
 }
 
 .prose-para a:hover {
     text-decoration: underline;
+}
+
+.prose-figure {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+}
+
+.prose-figure figcaption {
+    min-width: 20ch;
+    max-width: 35ch;
+    padding: 1rem;
 }
 
 .prose-para kbd {
