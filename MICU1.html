@@ -254,13 +254,29 @@
                 </article>
 
                 <h1 class="prose-heading-1">Architecture of 8086</h1>
-                <p class="prose-para">
-                    8086 Microprocessor is divided into 2 blocks - <span class="highlight">Bus Interface Unit</span> (BIU) and <span class="highlight">Execution Unit</span> (EU). Every component of 8086 microprocessor is present in these 2 blocks.
-                </p>
                 <figure class="prose-figure">
                     <img src="images/Intel_8086_CPU_Die.jfif" alt="">
                     <figcaption>Die Image of 8086 Microprocessor - <a href="https://www.wikipedia.org/">wikipedia.com</a> </figcaption>
                 </figure>
+
+                <article class="subtopic-1">
+                    <h2 class="prose-heading-2">Functional Block Diagram</h2>
+                    <p class="prose-para">
+                        8086 Microprocessor is divided into 2 blocks - <span class="highlight">Bus Interface Unit</span> (BIU) and <span class="highlight">Execution Unit</span> (EU). Every component of 8086 microprocessor is present in these 2 blocks.
+                    </p>
+                    <article class="subtopic-2">
+                        <h3 class="prose-heading-3">
+                            1) Bus Interface Unit (BIU)
+                        </h3>
+                        <p class="prose-para">
+                            BIU has a <span class="highlight">Instruction Stream Byte Queue</span> which contains the set of instructions to be executed. This queue pre-fetches upto 6 bits and enqueue them. When one instruction is executed, the control
+                            unit needs to wait for fetching the next instruction. But when the instructions are pre-fetched, the speed of execution increases. BIU is the only part of microprocessor which is connected to memory and is connected by
+                            <span class="highlight">segment registers
+                                </span>. These segment registers work with 16 Bits of binary data.
+                        </p>
+                    </article>
+                </article>
+
             </article>
         </section>
 
