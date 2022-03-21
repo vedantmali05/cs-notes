@@ -84,14 +84,13 @@
 }
 
 .index-list-box ul,
-.header-nav .submenu .submenu-subtopics {
+.header-nav .submenu ul {
     padding-left: 1rem;
-    margin-bottom: 2rem;
     border-left: 2px solid var(--smooth-dark);
 }
 
 .index-list-box ul li {
-    margin: 1rem 0;
+    padding-bottom: .5rem;
 }
 
 .index-list-box.show-index {
@@ -103,7 +102,7 @@
     transform: rotate(180deg);
 }
 
-.index-list-box li {
+.index-list-box li:not(.index-list-box ul li) {
     margin: 2rem 0;
 }
 
