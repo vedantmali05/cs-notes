@@ -56,8 +56,7 @@ for (let i = 0; i < submenu.length; i++) {
 
 // ///////////////// INDEX OPEN/CLOSE
 
-let indexTitle = document.querySelectorAll(".index-title"),
-    indexListBox = document.querySelector(".index-list-box");
+let indexTitle = document.querySelectorAll(".index-title");
 
 for (let i = 0; i < indexTitle.length; i++) {
     indexTitle[i].addEventListener("click", function() {
@@ -68,48 +67,4 @@ for (let i = 0; i < indexTitle.length; i++) {
             indexTitle[i].innerHTML
         );
     });
-}
-
-// /////////////////////// INDEX AND MENU AUTOMATED LINKS APPEND
-
-// this is the ul of the submenu
-let submenuThisPage = document.querySelector(".submenu-this-page");
-
-// GET ALL IDS ON THE PAGE
-let allIds = document.querySelectorAll("*[id]");
-topicIDArr = [];
-
-// Filter out the ids that are not assigned to any topic heading
-allIds.forEach(function(item) {
-    if (item.id.includes("topic_")) {
-        // PUSH FILTERED IDS INTO topicIDArr
-        topicIDArr.push(item.id);
-    }
-});
-
-// GET TAG NAMES OF FILTERED IDS
-let tagsOfTopicIDs = [];
-
-for (let i = 0; i < topicIDArr.length; i++) {
-    tagsOfTopicIDs.push(document.getElementById(topicIDArr[i]));
-
-
-    switch (tagsOfTopicIDs[i].tagName) {
-        case "H1":
-            // CREATE A LINK ELEMENT AND APPEND IT TO THE UL
-            let newElem = document.createElement("li");
-            newElem.innerHTML = `<a href="#${topicIDArr[i]}">${tagsOfTopicIDs[i].innerHTML} #</a>`;
-            submenuThisPage.innerHTML += `<li>${newElem.innerHTML}</li>`;
-            indexListBox.appendChild(newElem);
-            break;
-
-        case "H2":
-        case "H3":
-            let newChildElem = document.createElement("ul");
-            newChildElem.innerHTML = `<li><a href="#${topicIDArr[i]}">${tagsOfTopicIDs[i].innerHTML} #</a></li>`;
-            submenuThisPage.innerHTML += `<ul>${newChildElem.innerHTML}</ul>`;
-            indexListBox.appendChild(newChildElem);
-        default:
-            break;
-    }
 }
