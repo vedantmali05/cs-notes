@@ -32,7 +32,7 @@
     height: 3rem;
 }
 
-.header-breadcrumb :is(a) {
+.header-breadcrumb :is(a):not(.logo) {
     font-weight: 400;
     text-decoration: underline;
     white-space: nowrap;

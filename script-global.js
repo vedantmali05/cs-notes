@@ -68,3 +68,12 @@ for (let i = 0; i < indexTitle.length; i++) {
         );
     });
 }
+
+// On HASH Change
+
+window.onhashchange = function() {
+    header.style.opacity = ".2";
+    setTimeout(() => {
+        header.style.opacity = "1";
+    }, 1000);
+}

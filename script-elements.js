@@ -29,7 +29,7 @@ autoHeader.innerHTML = `<!-- HEADER BREADCRUMB -->
     <ul class="header-breadcrumb">
         <!-- LOGO -->
         <li>
-            <a href="${HomeSiteUrl}" class="logo">${iconLogo}</a>
+            <a href="${HomeSiteUrl}" class="logo">🙂</a>
         </li>
         <!-- Breadcrumb pages sequence --> 
         <li>
