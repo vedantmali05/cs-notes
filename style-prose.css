@@ -39,6 +39,10 @@
     margin-bottom: 1.2em;
 }
 
+li.prose-para {
+    margin-bottom: .3em;
+}
+
 .prose-para :is(.highlight) {
     font-weight: 600;
 }
