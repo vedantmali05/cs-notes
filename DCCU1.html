@@ -182,6 +182,7 @@
                             <li class="prose-para">
                                 <span class="highlight">Electronic Industries Association (EIA)</span>:- EIA has developed <span class="highlight"> RS (Recommended Standards)Series</span> of standards for data telecommunication.
                             </li>
+                        </ol>
                     </article>
                 </article>
 
@@ -264,6 +265,131 @@
                     <p class="prose-para">The unit of Baud Rate is <span class="highlight">baud</span> 🙂
                     </p>
                 </article>
+
+                <!-- Topic - Modes of Data Communication -->
+                <h1 class="prose-heading-1" id="topic_modeDataComm">
+                    1.4 Modes of Data Communication
+                </h1>
+                <p class="prose-para">
+                    Mode of data communication, aka <span class="highlight">Directional Modes</span> of data communication means the direction of flow of information between sender and receiver. Like we have multiplex in movie theatres, here:-
+                    <span class="highlight">Simplex</span>, <span class="highlight">Full Duplex</span> and <span class="highlight">Full Duplex</span> based on the direction of exchange of information. Also based on <span class="highlight">synchronization</span>                    (activity of multiple things at a same time) :- <span class="highlight">Asynchronous</span> and <span class="highlight">Synchronous</span>. And Also based on bits:- <span class="highlight">Serial</span> and <span class="highlight">Parallel</span>.
+                    In this prose, only the modes of data communication based on direction are noted.
+                </p>
+
+                <!-- Subtopic #2 - Simplex -->
+                <article class="subtopic-1">
+                    <h2 class="prose-heading-2" id="topic_simplex">
+                        Simplex
+                    </h2>
+                    <p class="prose-para">
+                        Simplex, aka <span class="highlight">Unidirectional</span>, is the mode of data communication is possible in only one direction i.e. the data can be only sent but can never be received (sender => receiver). So, sender can never
+                        be a receiver and receiver can never be a sender. This mode of communication is not handy in the present day as we need 2-way exchange of information. But this is still used in the fields where reply is not required. Examples of
+                        Simplex are radio, TV, input devices like keyboard, announcement mics 🎤, etc.
+                    </p>
+
+                    <!-- Subtopic #3 - Advantages of Simplex -->
+                    <article class="subtopic-2">
+                        <h3 class="prose-heading-3">
+                            Advantages of Simplex
+                        </h3>
+                        <ul class="prose-list">
+                            <li class="prose-para">
+                                The data exchanged in simplex uses the full capacity of the transmission medium channel.
+                            </li>
+                            <li class="prose-para">
+                                Least or no traffic issues.
+                            </li>
+                        </ul>
+                    </article>
+                    <!-- Subtopic #3 - Disadvantages of Simplex -->
+                    <article class="subtopic-2">
+                        <h3 class="prose-heading-3">
+                            Disadvantages 🤷‍♂️ of Simplex
+                        </h3>
+                        <ul class="prose-list">
+                            <li class="prose-para">
+                                No acknowledgement mechanism. (data cannot be resent to the sender from the receiver)
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- Subtopic #2 - Half Duplex -->
+                    <article class="subtopic-1">
+                        <h2 class="prose-heading-2" id="topic_halfDuplex">
+                            Half Duplex
+                        </h2>
+                        <p class="prose-para">
+                            Half Duplex, aka <span class="highlight">Semi-Duplex</span>, is the mode where data can be communicated in both directions i.e. the data can be sent to the receiver or vice versa, <span class="highlight">but in one direction at a time.</span>                            This technology can be used in error detection were request and respond are queued and consecutive. Examples are walkie-talkies, iBrowsers, etc. </p>
+
+                        <!-- Subtopic #3 - Advantages of Half Duplex -->
+                        <article class="subtopic-2">
+                            <h3 class="prose-heading-3">
+                                Advantages of Half Duplex
+                            </h3>
+                            <ul class="prose-list">
+                                <li class="prose-para">
+                                    Full capacity of the channel can be used here too, but alternately.
+                                </li>
+                                <li class="prose-para">
+                                    Least or no traffic issues.
+                                </li>
+                            </ul>
+                        </article>
+                        <!-- Subtopic #3 - Disadvantages of Half Duplex -->
+                        <article class="subtopic-2">
+                            <h3 class="prose-heading-3">
+                                Disadvantages of Half Duplex
+                            </h3>
+                            <ul class="prose-list">
+                                <li class="prose-para">
+                                    The data cannot be communicated in both directions at the same time.
+                                </li>
+                                <li class="prose-para">
+                                    Delay may occur if the system needs to wait for reply.
+                                </li>
+                            </ul>
+                        </article>
+
+                        <!-- Subtopic #2 - Full Duplex -->
+                        <article class="subtopic-1">
+                            <h2 class="prose-heading-2" id="topic_fullDuplex">
+                                Full Duplex
+                            </h2>
+                            <p class="prose-para">
+                                Full Duplex, aka <span class="highlight">Bi-directional</span>, is the mode where data can be communicated in both directions i.e. the data can be sent to the receiver or vice versa, <span class="highlight"> at a same time.</span>                                Full Duplex has 2 times the bandwidth than Half Duplex. The channel capacity is divided into 2 parts with opposite directions (sender
+                                <=> receiver). Examples of Full Duplex are Bluetooth, Telephone Networks, messengers, etc.
+                            </p>
+
+                            <!-- Subtopic #3 - Advantages of Full Duplex -->
+                            <article class="subtopic-2">
+                                <h3 class="prose-heading-3">
+                                    Advantages of Full Duplex
+                                </h3>
+                                <ul class="prose-list">
+                                    <li class="prose-para">
+                                        2 way and simultaneous communication is possible.
+                                    </li>
+                                    <li class="prose-para">
+                                        This is the fastest mode of communication over devices.
+                                    </li>
+                                </ul>
+                            </article>
+                            <!-- Subtopic #3 - Disadvantages of Full Duplex -->
+                            <article class="subtopic-2">
+                                <h3 class="prose-heading-3">
+                                    Disadvantages of Full Duplex
+                                </h3>
+                                <ul class="prose-list">
+                                    <li class="prose-para">
+                                        Messaging doesn't use the full capacity of the channel. It is devided into 2 parts.
+                                    </li>
+                                    <li class="prose-para">
+                                        Similarly, bandwidth is not utilized properly deu to 2 separate paths.
+                                    </li>
+                                </ul>
+                            </article>
+
+
         </section>
 
         <!-- PROSE ENDS -->
