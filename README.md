@@ -5,7 +5,7 @@
 ## JSON Codes for Snippets (HTML)
 
 ```json
-// Paragraph
+// Paragraph Snippet
     "Notes - Prose-para": {
         "prefix": "prose-para",
         "body": [
