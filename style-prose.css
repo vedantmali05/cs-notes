@@ -1,8 +1,81 @@
-.topic-prose-wrapper {
-    padding: 2rem 0;
+/* ///////////////////////// TOPIC AND PROSE WRAPPER */
+
+.prose-index-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 7rem 0;
+    border-bottom: 1px solid var(--smooth-dark);
+    border-top: 1px solid var(--smooth-dark);
+}
+
+
+/* ///////////////////// TABLE OF CONTENTS/INDEX */
+
+.index-wrapper {
+    width: 100%;
+    border-bottom: 1px solid var(--purple);
+    display: flex;
+    flex-direction: column;
+    max-width: 25rem;
+    overflow: auto;
+    max-height: calc(100vh - 7rem);
+}
+
+.index-wrapper .index-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    cursor: pointer;
+    width: min(100%, 50rem);
+    order: -1;
+}
+
+.index-title h2 {
+    font: 500 3rem/130% "Lora", serif;
+}
+
+.index-list-box {
+    padding: 1rem;
+    font-size: 1.6rem;
+    transition: all .5s ease;
+    overflow: auto;
+}
+
+.index-list-box ul,
+.header-nav .submenu ul {
+    padding-left: 1rem;
+    border-left: 2px solid var(--smooth-dark);
+}
+
+.index-list-box ul li {
+    padding-bottom: .5rem;
+}
+
+.index-list-box li:not(.index-list-box ul li) {
+    margin: 2rem 0;
+    border-bottom: 1px solid var(--smooth-dark);
+}
+
+.index-list-box li a {
+    border-radius: 5px;
+}
+
+.index-list-box li a:hover {
+    background: var(--pink-light);
+}
+
+
+/* /////////////////////////// PROSE WRAPPER */
+
+.topic-prose-wrapper {
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+    padding: 2rem 4rem;
+    max-width: 70rem;
+    margin-left: auto;
+    display: block;
+    border-left: 1px solid var(--text-black);
+    overflow: auto;
+    max-height: calc(100vh - 7rem);
 }
 
 .prose-heading-1 {
@@ -123,6 +196,7 @@ ul.prose-list li {
     margin: 2rem 0;
     border-radius: 20px;
     padding: 2rem 1.5rem;
+    max-width: 70rem;
 }
 
 .key-header {
@@ -172,4 +246,19 @@ ul.prose-list li {
 
 /* *********** MEDIA QUERIES **************** */
 
-@media (min-width: 375px) {}
+@media (max-width: 768px) {
+    .prose-index-wrapper {
+        display: block;
+        border: none;
+    }
+    .index-wrapper {
+        max-width: 100%;
+        max-height: 100%;
+        overflow: auto;
+    }
+    .topic-prose-wrapper {
+        padding: 2rem;
+        max-height: 100%;
+        border: none;
+    }
+}

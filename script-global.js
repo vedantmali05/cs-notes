@@ -58,22 +58,13 @@ for (let i = 0; i < submenu.length; i++) {
 
 let indexTitle = document.querySelectorAll(".index-title");
 
-for (let i = 0; i < indexTitle.length; i++) {
-    indexTitle[i].addEventListener("click", function() {
-        dropDown(
-            indexListBox,
-            indexTitle[i],
-            "show-index",
-            indexTitle[i].innerHTML
-        );
-    });
-}
-
 // On HASH Change
-
 window.onhashchange = function() {
-    header.style.opacity = ".2";
-    setTimeout(() => {
-        header.style.opacity = "1";
-    }, 1000);
+    dropDown(
+        headerNavWrapper,
+        menuBtn,
+        "show-menu",
+        `<i class="bi bi-x-lg"></i>`,
+        `<i class="bi bi-grid"></i>`
+    );
 }
