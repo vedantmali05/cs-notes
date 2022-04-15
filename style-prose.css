@@ -74,8 +74,11 @@
     margin-left: auto;
     display: block;
     border-left: 1px solid var(--text-black);
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     max-height: calc(100vh - 7rem);
+    width: 100%;
+    max-width: 100%;
 }
 
 .prose-heading-1 {
@@ -135,18 +138,6 @@ li.prose-para {
     text-decoration: underline;
 }
 
-.prose-figure {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1.4rem;
-}
-
-.prose-figure figcaption {
-    min-width: 20ch;
-    max-width: 35ch;
-    padding: 1rem;
-}
-
 .prose-para kbd {
     font: 600 16px/130% "Roboto Mono";
     border: 1px solid var(--text-black);
@@ -184,8 +175,28 @@ ul.prose-list li {
     list-style: disc;
 }
 
-.sources * {
-    font: italic 1.4rem/130% "Lora", serif;
+.sources *,
+.prose-figure figcaption {
+    font: italic 600 1.4rem/130% "Poppins", sans-serif;
+}
+
+
+/* //////////////////////////// Figures in Prose */
+
+.prose-figure {
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+}
+
+.prose-figure img {
+    min-width: 50rem;
+}
+
+.prose-figure figcaption {
+    min-width: 20ch;
+    max-width: 35ch;
+    padding: 1rem;
 }
 
 
@@ -257,7 +268,7 @@ ul.prose-list li {
         overflow: auto;
     }
     .topic-prose-wrapper {
-        padding: 2rem;
+        padding: 2rem 0;
         max-height: 100%;
         border: none;
     }
