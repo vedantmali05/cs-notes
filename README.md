@@ -168,4 +168,17 @@
         "description": "code keybox snippet"
     },
 ```
+``` json
+    // HTML Snippet for Images with its caption
+    "Notes - Figure": {
+        "prefix": "prose-figure",
+        "body": [
+            "<figure class=\"prose-figure\">",
+            "<img src=\"$1\" alt=\"$2\">",
+                "<figcaption>$3</figcaption>",
+            "</figure>",
+        ],
+        "description": "code keybox snippet"
+    },
+```
 
