@@ -14,8 +14,8 @@
 }
 
 .header-breadcrumb-wrapper {
-    overflow-x: auto;
-    max-width: 55rem;
+    overflow: hidden;
+    max-width: 40rem;
     position: relative;
     padding: 1rem 0;
 }
@@ -23,6 +23,12 @@
 .header-breadcrumb {
     display: flex;
     font-size: 1.6rem;
+    white-space: nowrap;
+}
+
+.header-breadcrumb li {
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%;
 }
@@ -32,7 +38,7 @@
     height: 3rem;
 }
 
-.header-breadcrumb :is(a):not(.logo) {
+.header-breadcrumb :is(a):not(.logo a) {
     font-weight: 400;
     text-decoration: underline;
     white-space: nowrap;
