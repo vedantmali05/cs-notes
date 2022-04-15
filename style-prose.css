@@ -30,12 +30,13 @@
 }
 
 .index-title h2 {
+    padding: 1rem;
     font: 500 3rem/130% "Lora", serif;
 }
 
 .index-list-box {
     padding: 1rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     transition: all .5s ease;
     overflow: auto;
 }
@@ -100,7 +101,7 @@
 .prose-heading-2:not(.key-header .prose-heading-2) {
     margin-top: 3rem;
     padding-top: 1rem;
-    border-top: 1px solid var(--smooth-dark);
+    border-top: 1px solid var(--purple);
 }
 
 .prose-heading-3 {
@@ -112,7 +113,7 @@
     max-width: 70ch;
     font-weight: 400;
     font-size: 1.6rem;
-    margin-bottom: 1.2em;
+    margin: .5rem 1rem;
 }
 
 li.prose-para {
