@@ -12,12 +12,12 @@ if (filename != `index.html`) {
         <a>
             This Page
             <!-- Expand Arrow -->
-            <span class="expand-nav show-submenu">
+            <span class="expand-nav">
                 ${iconExpand}
             </span>
         </a>
     <!-- SUBMENU - Topics on this page list -->
-    <ul class="submenu submenu-this-page show-submenu">
+    <ul class="submenu submenu-this-page">
     </ul>
     </li>`
 } else {
@@ -52,7 +52,7 @@ ${BtnMenu}
             <a>
                 Subjects
                 <!-- Expand Arrow -->
-                <span class="expand-nav show-submenu">
+                <span class="expand-nav">
                     ${iconExpand}
                 </span>
             </a>
