@@ -19,7 +19,8 @@
     <!-- Font - POPPINS, LORA, ROBOTO MONO, ROBOTO -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
 
@@ -33,21 +34,6 @@
 
     <!-- MAIN SECTION -->
     <main class="notes-main" id="notes-main">
-        <!-- Course Intro -->
-        <section class="course-intro-wrapper">
-            <!-- COURSE CONTENTS -->
-            <div class="course-intro-contents">
-                <div class="eyebrow">1.0</div>
-                <h1 class="course-heading">Fundamentals of Data Communication and Computer Network</h1>
-                <p class="course-intro-para">
-                    The topic explaining the process of Data Communication like its components , modes, signals and fundamentals of Computer Networks like their definition, applications, advantages, types and more.
-                </p>
-            </div>
-            <figure class="course-intro-hero">
-                <img src="images/illu-hero.png" alt="">
-            </figure>
-        </section>
-
         <!-- PROSE AND INDEX -->
         <section class="prose-index-wrapper">
             <!-- Table of Contents -->
@@ -66,16 +52,34 @@
 
             <!-- TOPIC PROSE -->
             <section class="topic-prose-wrapper">
+                <!-- Course Intro -->
+                <section class="course-intro-wrapper">
+                    <!-- COURSE CONTENTS -->
+                    <div class="course-intro-contents">
+                        <div class="eyebrow">1.0</div>
+                        <h1 class="course-heading">Fundamentals of Data Communication and Computer Network</h1>
+                        <p class="course-intro-para">
+                            The topic explaining the process of Data Communication like its components , modes, signals
+                            and fundamentals of Computer Networks like their definition, applications, advantages, types
+                            and more.
+                        </p>
+                    </div>
+                    <figure class="course-intro-hero">
+                        <img src="images/illu-hero.png" alt="">
+                    </figure>
+                </section>
                 <article class="topic-prose">
                     <!-- TOPIC - Process of Data Communication and its Components -->
-                    <h1 id="topic_processAndComponentsDCC" class="prose-heading-1">1.1 Process of Data Communication and its Components</h1>
+                    <h1 id="topic_processAndComponentsDCC" class="prose-heading-1">1.1 Process of Data Communication and
+                        its Components</h1>
                     <aside class="key definition">
                         <div class="key-header">
                             <span class="key-icon">📙</span>
                             <h2 class="prose-heading-2">Definition - Data Communication</h2>
                         </div>
                         <div class="key-content">
-                            <p class="prose-para">The process of sending or receiving digital data between 2 or more devices or <span class="highlight">Nodes</span> via transmission medium.</p>
+                            <p class="prose-para">The process of sending or receiving digital data between 2 or more
+                                devices or <span class="highlight">Nodes</span> via transmission medium.</p>
                             <p class="prose-para">
                                 It is applied in a small geographical area or globally.
                             </p>
@@ -83,12 +87,21 @@
                     </aside>
                     <ol class="prose-list">
                         <p class="prose-para">5 Components of Data Communication</p>
-                        <li class="prose-para"><span class="highlight">Sender</span>: also known as <span class="highlight">Transmitter</span> aka <span class="highlight">Source</span> is the device or node that generates and sends the message to the receiver</li>
-                        <li class="prose-para"><span class="highlight">Message</span>: The data that is communicated and created and send by sender to the receiver is a Message. A message can be text, number, picture, audio, video or the combination of all.</li>
-                        <li class="prose-para"><span class="highlight">Medium</span>: While the message is travelling from source to receiver it needs a path. So, Medium is a physical through which a message is carried. This path can be wired like coaxial wire, fiber optic
+                        <li class="prose-para"><span class="highlight">Sender</span>: also known as <span
+                                class="highlight">Transmitter</span> aka <span class="highlight">Source</span> is the
+                            device or node that generates and sends the message to the receiver</li>
+                        <li class="prose-para"><span class="highlight">Message</span>: The data that is communicated and
+                            created and send by sender to the receiver is a Message. A message can be text, number,
+                            picture, audio, video or the combination of all.</li>
+                        <li class="prose-para"><span class="highlight">Medium</span>: While the message is travelling
+                            from source to receiver it needs a path. So, Medium is a physical through which a message is
+                            carried. This path can be wired like coaxial wire, fiber optic
                             cable, etc. or wireless like laser, internet, radio waves, etc.</li>
-                        <li class="prose-para"><span class="highlight">Receiver</span>: The device that receives the message sent by sender and travelling on medium is a Receiver.</li>
-                        <li class="prose-para"><span class="highlight"><a href="#topic_protocolsNStd">Protocols</a></span>: Protocols are the sets of rules that govern the communication between sender and receiver.</li>
+                        <li class="prose-para"><span class="highlight">Receiver</span>: The device that receives the
+                            message sent by sender and travelling on medium is a Receiver.</li>
+                        <li class="prose-para"><span class="highlight"><a
+                                    href="#topic_protocolsNStd">Protocols</a></span>: Protocols are the sets of rules
+                            that govern the communication between sender and receiver.</li>
                     </ol>
 
                     <aside class="key additonal-point">
@@ -107,10 +120,16 @@
                     <article class="subtopic-1">
                         <h2 class="prose-heading-2" id="topic_protocols">Protocols</h2>
                         <p class="prose-para">
-                            Protocols are the rules that govern the communication between sender and receiver. It determines how, what and when a data is communicated. Both the traders follow same Protocols. For example:- In
-                            <span class="highlight">File Transfer Protocols (FTP)</span>, only files can be sent or received and it doesn't allow the features like calling. More examples are - <span class="highlight">Internet Protocol (IP)</span>,
+                            Protocols are the rules that govern the communication between sender and receiver. It
+                            determines how, what and when a data is communicated. Both the traders follow same
+                            Protocols. For example:- In
+                            <span class="highlight">File Transfer Protocols (FTP)</span>, only files can be sent or
+                            received and it doesn't allow the features like calling. More examples are - <span
+                                class="highlight">Internet Protocol (IP)</span>,
                             <span class="highlight">Hypertext Transfer Protocol (HTTP)</span>,
-                            <span class="highlight">Hyper Text Transfer Protocol Secure (HTTPS)</span>, <span class="highlight">Transmission Control Protocol (TCP)</span>, <span class="highlight">Simple Mail Transport Protocol (SMTP)</span>, etc.
+                            <span class="highlight">Hyper Text Transfer Protocol Secure (HTTPS)</span>, <span
+                                class="highlight">Transmission Control Protocol (TCP)</span>, <span
+                                class="highlight">Simple Mail Transport Protocol (SMTP)</span>, etc.
                         </p>
                         <article class="subtopic-2">
                             <!-- Subtopic #3 - key Elements of Protocols -->
@@ -120,13 +139,16 @@
                             <ol class="prose-list">
                                 <p class="prose-para">There are 3 key elements of Protocols in Data Communication</p>
                                 <li class="prose-para">
-                                    <span class="highlight">Syntax</span>:- Syntax is the structure or format of the message. It also indicates how to read the bits.
+                                    <span class="highlight">Syntax</span>:- Syntax is the structure or format of the
+                                    message. It also indicates how to read the bits.
                                 </li>
                                 <li class="prose-para">
-                                    <span class="highlight">Semantic</span>:- Semantics interprets the meaning of the bits by knowing what field defines what action.
+                                    <span class="highlight">Semantic</span>:- Semantics interprets the meaning of the
+                                    bits by knowing what field defines what action.
                                 </li>
                                 <li class="prose-para">
-                                    <span class="highlight">Timing</span>:- Defines when and what data to be sent and at what speed.
+                                    <span class="highlight">Timing</span>:- Defines when and what data to be sent and at
+                                    what speed.
                                 </li>
                         </article>
                     </article>
@@ -135,8 +157,11 @@
                     <article class="subtopic-1">
                         <h2 class="prose-heading-2" id="topic_standards">Standards</h2>
                         <p class="prose-para">
-                            When data is communicated, it is sent by following some <span class="highlight">guidelines</span> given by some standard organizations and are accepted globally. These guidelines are known as <span class="highlight">Standards</span>.
-                            Standards are provided to all the people who establish a network for communicating the message such as manufacturers, vendors, governtment agencies, service providers, etc.
+                            When data is communicated, it is sent by following some <span
+                                class="highlight">guidelines</span> given by some standard organizations and are
+                            accepted globally. These guidelines are known as <span class="highlight">Standards</span>.
+                            Standards are provided to all the people who establish a network for communicating the
+                            message such as manufacturers, vendors, governtment agencies, service providers, etc.
                         </p>
 
                         <!-- Subtopic #3 - Classification of Standards -->
@@ -147,11 +172,14 @@
                             <ol class="prose-list">
                                 <p class="prose-para">There are 2 types of standards in Data Communication</p>
                                 <li class="prose-para">
-                                    <span class="highlight">De Facto Standards</span>:- (From Latin) Meaning "By Fact" or by convention. De Facto standards are the standards that are not approved by organizations or governtments but are announced as standards
+                                    <span class="highlight">De Facto Standards</span>:- (From Latin) Meaning "By Fact"
+                                    or by convention. De Facto standards are the standards that are not approved by
+                                    organizations or governtments but are announced as standards
                                     due to their widespread use.
                                 </li>
                                 <li class="prose-para">
-                                    <span class="highlight">De Jure</span>:- (From Latin) Meaning "By Law" or regulation. De Jure standards are approved by organizations or governtments.
+                                    <span class="highlight">De Jure</span>:- (From Latin) Meaning "By Law" or
+                                    regulation. De Jure standards are approved by organizations or governtments.
                                 </li>
                             </ol>
 
@@ -165,23 +193,33 @@
                             <ol class="prose-list">
                                 <p class="prose-para">Following are some noteworthy Standard Orgs. </p>
                                 <li class="prose-para">
-                                    <span class="highlight">International Standards Organization (ISO)</span>:- ISO creates set of guidelines for graphics, document exchange, data communication , etc.
+                                    <span class="highlight">International Standards Organization (ISO)</span>:- ISO
+                                    creates set of guidelines for graphics, document exchange, data communication , etc.
                                 </li>
                                 <li class="prose-para">
-                                    <span class="highlight">Consultative Committee for International Telephony and Telegraphy (CCITT)</span>:- CCITT, for USA, develops standards for telephon and telegraph communication.
+                                    <span class="highlight">Consultative Committee for International Telephony and
+                                        Telegraphy (CCITT)</span>:- CCITT, for USA, develops standards for telephon and
+                                    telegraph communication.
                                 </li>
                                 <li class="prose-para">
                                     <span class="highlight">
-                                    American National Standard Institute (ANSI)</span>:- ANSI is a primary organization for fostering the development of technology standards in USA for data communication.
+                                        American National Standard Institute (ANSI)</span>:- ANSI is a primary
+                                    organization for fostering the development of technology standards in USA for data
+                                    communication.
                                 </li>
                                 <li class="prose-para">
-                                    <span class="highlight">Standard Council of Canada (SCC)</span>:- It is an official Standard Agency for Canada having similar responsibilities as ANSI has.
+                                    <span class="highlight">Standard Council of Canada (SCC)</span>:- It is an official
+                                    Standard Agency for Canada having similar responsibilities as ANSI has.
                                 </li>
                                 <li class="prose-para">
-                                    <span class="highlight">Institute of Electrical and Electronic Enggineering (IEEE)</span>:- IEEE is a professional org of electronic, computer and communication engineering providing standards for the networking field..
+                                    <span class="highlight">Institute of Electrical and Electronic Enggineering
+                                        (IEEE)</span>:- IEEE is a professional org of electronic, computer and
+                                    communication engineering providing standards for the networking field..
                                 </li>
                                 <li class="prose-para">
-                                    <span class="highlight">Electronic Industries Association (EIA)</span>:- EIA has developed <span class="highlight"> RS (Recommended Standards)Series</span> of standards for data telecommunication.
+                                    <span class="highlight">Electronic Industries Association (EIA)</span>:- EIA has
+                                    developed <span class="highlight"> RS (Recommended Standards)Series</span> of
+                                    standards for data telecommunication.
                                 </li>
                             </ol>
                         </article>
@@ -192,7 +230,9 @@
                         1.3 Measurements in Data Transmission
                     </h1>
                     <p class="prose-para">
-                        Data Transmission is sending data from sender to receiver. Meanwhile, factors like speed of data transfer, size of data or amount of data being transferred, etc. are measured. Each measurement has its own definition, unit and more.
+                        Data Transmission is sending data from sender to receiver. Meanwhile, factors like speed of data
+                        transfer, size of data or amount of data being transferred, etc. are measured. Each measurement
+                        has its own definition, unit and more.
                     </p>
 
                     <!-- Subtopic - Bandwidth -->
@@ -208,8 +248,11 @@
                             </div>
                         </aside>
                         <p class="prose-para">
-                            Well its the measure of (volumn of) how much information a network can transfer. Bandwidth is measured in <span class="highlight">bits per second (bps)</span> (Number of bits transferred in a city). More effective a transmission
-                            medium (like Internet) is, more the bandwidth it has. Internet Service Providers (ISP) typically denote bandwidth in MBPS or GBPS.
+                            Well its the measure of (volumn of) how much information a network can transfer. Bandwidth
+                            is measured in <span class="highlight">bits per second (bps)</span> (Number of bits
+                            transferred in a city). More effective a transmission
+                            medium (like Internet) is, more the bandwidth it has. Internet Service Providers (ISP)
+                            typically denote bandwidth in MBPS or GBPS.
                         </p>
 
                         <aside class="key callout">
@@ -218,7 +261,9 @@
                                 <h2 class="prose-heading-2">Key Point - Broad Band</h2>
                             </div>
                             <div class="key-content">
-                                <p class="prose-para">USA's Federal Communications Commission (FCC) defines "Broad Band" internet speeds as connections with a bandwidth of more than 25 mbps downloads and more than 3 mbps for uploads.</p>
+                                <p class="prose-para">USA's Federal Communications Commission (FCC) defines "Broad Band"
+                                    internet speeds as connections with a bandwidth of more than 25 mbps downloads and
+                                    more than 3 mbps for uploads.</p>
                             </div>
                         </aside>
                     </article>
@@ -232,11 +277,15 @@
                                 <h2 class="prose-heading-2">Definition - Data Transmission Rate</h2>
                             </div>
                             <div class="key-content">
-                                <p class="prose-para"> Data Transmission Rate (DTR) is amount of data transferred in given time. Thus, in simple words, <span class="highlight">speed</span> of data transfer is the DTR </p>
+                                <p class="prose-para"> Data Transmission Rate (DTR) is amount of data transferred in
+                                    given time. Thus, in simple words, <span class="highlight">speed</span> of data
+                                    transfer is the DTR </p>
                             </div>
                         </aside>
                         <p class="prose-para">
-                            Bandwidth is the maximum data transmission speed of a network, while DTR is the actual (or present) data transmission speed. But with big bandwidths, there comes a great DTR or the speed. DTR is usually measured in <span class="highlight">bps</span>                            or mbps.
+                            Bandwidth is the maximum data transmission speed of a network, while DTR is the actual (or
+                            present) data transmission speed. But with big bandwidths, there comes a great DTR or the
+                            speed. DTR is usually measured in <span class="highlight">bps</span> or mbps.
                         </p>
                         <aside class="key additonal-point">
                             <div class="key-header">
@@ -245,7 +294,9 @@
                             </div>
                             <div class="key-content">
                                 <p class="prose-para">
-                                    The highest DTR measured till date is <span class="highlight">14 TBPS</span> over a single optical fiber recorded and reported by Japan's Nippon Telegraph and Telephone Docomo in 2006.
+                                    The highest DTR measured till date is <span class="highlight">14 TBPS</span> over a
+                                    single optical fiber recorded and reported by Japan's Nippon Telegraph and Telephone
+                                    Docomo in 2006.
                                 </p>
                             </div>
                         </aside>
@@ -260,7 +311,8 @@
                                 <h2 class="prose-heading-2">Definition - Baud Rate</h2>
                             </div>
                             <div class="key-content">
-                                <p class="prose-para"> Baud Rate is the number of signal elements or changes to signal occurs per second when it travels through a medium.</p>
+                                <p class="prose-para"> Baud Rate is the number of signal elements or changes to signal
+                                    occurs per second when it travels through a medium.</p>
                             </div>
                         </aside>
                         <p class="prose-para">The unit of Baud Rate is <span class="highlight">baud</span> 🙂
@@ -272,8 +324,15 @@
                         1.4 Modes of Data Communication
                     </h1>
                     <p class="prose-para">
-                        Mode of data communication, aka <span class="highlight">Directional Modes</span> of data communication means the direction of flow of information between sender and receiver. Like we have multiplex in movie theatres, here:-
-                        <span class="highlight">Simplex</span>, <span class="highlight">Full Duplex</span> and <span class="highlight">Full Duplex</span> based on the direction of exchange of information. Also based on <span class="highlight">synchronization</span>                        (activity of multiple things at a same time) :- <span class="highlight">Asynchronous</span> and <span class="highlight">Synchronous</span>. And Also based on bits:- <span class="highlight">Serial</span> and <span class="highlight">Parallel</span>.
+                        Mode of data communication, aka <span class="highlight">Directional Modes</span> of data
+                        communication means the direction of flow of information between sender and receiver. Like we
+                        have multiplex in movie theatres, here:-
+                        <span class="highlight">Simplex</span>, <span class="highlight">Full Duplex</span> and <span
+                            class="highlight">Full Duplex</span> based on the direction of exchange of information. Also
+                        based on <span class="highlight">synchronization</span> (activity of multiple things at a same
+                        time) :- <span class="highlight">Asynchronous</span> and <span
+                            class="highlight">Synchronous</span>. And Also based on bits:- <span
+                            class="highlight">Serial</span> and <span class="highlight">Parallel</span>.
                         In this prose, only the modes of data communication based on direction are noted.
                     </p>
 
@@ -283,8 +342,12 @@
                             Simplex
                         </h2>
                         <p class="prose-para">
-                            Simplex, aka <span class="highlight">Unidirectional</span>, is the mode of data communication is possible in only one direction i.e. the data can be only sent but can never be received (sender => receiver). So, sender can never
-                            be a receiver and receiver can never be a sender. This mode of communication is not handy in the present day as we need 2-way exchange of information. But this is still used in the fields where reply is not required. Examples
+                            Simplex, aka <span class="highlight">Unidirectional</span>, is the mode of data
+                            communication is possible in only one direction i.e. the data can be only sent but can never
+                            be received (sender => receiver). So, sender can never
+                            be a receiver and receiver can never be a sender. This mode of communication is not handy in
+                            the present day as we need 2-way exchange of information. But this is still used in the
+                            fields where reply is not required. Examples
                             of Simplex are radio, TV, input devices like keyboard, announcement mics 🎤, etc.
                         </p>
 
@@ -295,7 +358,8 @@
                             </h3>
                             <ul class="prose-list">
                                 <li class="prose-para">
-                                    The data exchanged in simplex uses the full capacity of the transmission medium channel.
+                                    The data exchanged in simplex uses the full capacity of the transmission medium
+                                    channel.
                                 </li>
                                 <li class="prose-para">
                                     Least or no traffic issues.
@@ -309,7 +373,8 @@
                             </h3>
                             <ul class="prose-list">
                                 <li class="prose-para">
-                                    No acknowledgement mechanism. (data cannot be resent to the sender from the receiver)
+                                    No acknowledgement mechanism. (data cannot be resent to the sender from the
+                                    receiver)
                                 </li>
                             </ul>
                         </article>
@@ -321,7 +386,11 @@
                             Half Duplex
                         </h2>
                         <p class="prose-para">
-                            Half Duplex, aka <span class="highlight">Semi-Duplex</span>, is the mode where data can be communicated in both directions i.e. the data can be sent to the receiver or vice versa, <span class="highlight">but in one direction at a time.</span>                            This technology can be used in error detection were request and respond are queued and consecutive. Examples are walkie-talkies, iBrowsers, etc. </p>
+                            Half Duplex, aka <span class="highlight">Semi-Duplex</span>, is the mode where data can be
+                            communicated in both directions i.e. the data can be sent to the receiver or vice versa,
+                            <span class="highlight">but in one direction at a time.</span> This technology can be used
+                            in error detection were request and respond are queued and consecutive. Examples are
+                            walkie-talkies, iBrowsers, etc. </p>
 
                         <!-- Subtopic #3 - Advantages of Half Duplex -->
                         <article class="subtopic-2">
@@ -359,7 +428,10 @@
                             Full Duplex
                         </h2>
                         <p class="prose-para">
-                            Full Duplex, aka <span class="highlight">Bi-directional</span>, is the mode where data can be communicated in both directions i.e. the data can be sent to the receiver or vice versa, <span class="highlight"> at a same time.</span>                            Full Duplex has 2 times the bandwidth than Half Duplex. The channel capacity is divided into 2 parts with opposite directions (sender
+                            Full Duplex, aka <span class="highlight">Bi-directional</span>, is the mode where data can
+                            be communicated in both directions i.e. the data can be sent to the receiver or vice versa,
+                            <span class="highlight"> at a same time.</span> Full Duplex has 2 times the bandwidth than
+                            Half Duplex. The channel capacity is divided into 2 parts with opposite directions (sender
                             <=> receiver). Examples of Full Duplex are Bluetooth, Telephone Networks, messengers, etc.
                         </p>
 
@@ -373,7 +445,7 @@
                                     2 way and simultaneous communication is possible.
                                 </li>
                                 <li class="prose-para">
-                                    This is the fastest mode of communication over devices. 
+                                    This is the fastest mode of communication over devices.
                                 </li>
                             </ul>
                         </article>
