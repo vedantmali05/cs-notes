@@ -1,280 +1,274 @@
 /* ///////////////////////// TOPIC AND PROSE WRAPPER */
 
 .prose-index-wrapper {
-    display: flex;
-    margin: 7rem 0;
-    border-bottom: 1px solid var(--smooth-dark);
-    border-top: 1px solid var(--smooth-dark);
+	display: flex;
+	border-bottom: 1px solid var(--smooth-dark);
+	border-top: 1px solid var(--smooth-dark);
 }
-
 
 /* ///////////////////// TABLE OF CONTENTS/INDEX */
 
 .index-wrapper {
-    width: 100%;
-    border-bottom: 1px solid var(--purple);
-    display: flex;
-    flex-direction: column;
-    max-width: 25rem;
-    overflow: auto;
-    max-height: calc(100vh - 7rem);
+	width: 100%;
+	border-bottom: 1px solid var(--purple);
+	display: flex;
+	flex-direction: column;
+	max-width: 25rem;
+	overflow: auto;
+	max-height: calc(100vh - 7rem);
 }
 
 .index-wrapper .index-title {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    cursor: pointer;
-    width: min(100%, 50rem);
-    order: -1;
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+	cursor: pointer;
+	width: min(100%, 50rem);
+	order: -1;
 }
 
 .index-title h2 {
-    padding: 1rem;
-    font: 500 3rem/130% "Lora", serif;
+	padding: 1rem;
+	font: 500 3rem/130% 'Lora', serif;
 }
 
 .index-list-box {
-    padding: 1rem;
-    font-size: 1.4rem;
-    transition: all .5s ease;
-    overflow: auto;
+	padding: 1rem;
+	font-size: 1.4rem;
+	transition: all 0.5s ease;
+	overflow: auto;
 }
 
 .index-list-box ul,
 .header-nav .submenu ul {
-    padding-left: 1rem;
-    border-left: 2px solid var(--smooth-dark);
+	padding-left: 1rem;
+	border-left: 2px solid var(--smooth-dark);
 }
 
 .index-list-box ul li {
-    padding-bottom: .5rem;
+	padding-bottom: 0.5rem;
 }
 
 .index-list-box li:not(.index-list-box ul li) {
-    margin: 2rem 0;
-    border-bottom: 1px solid var(--smooth-dark);
+	margin: 2rem 0;
+	border-bottom: 1px solid var(--smooth-dark);
 }
 
 .index-list-box li a {
-    border-radius: 5px;
+	border-radius: 5px;
 }
 
 .index-list-box li a:hover {
-    background: var(--pink-light);
+	background: var(--pink-light);
 }
-
 
 /* /////////////////////////// PROSE WRAPPER */
 
 .topic-prose-wrapper {
-    scroll-behavior: smooth;
-    scroll-padding: 2rem;
-    padding: 2rem 4rem;
-    max-width: 70rem;
-    margin-left: auto;
-    display: block;
-    border-left: 1px solid var(--text-black);
-    overflow-y: auto;
-    overflow-x: hidden;
-    max-height: calc(100vh - 7rem);
-    width: 100%;
-    max-width: 100%;
+	scroll-behavior: smooth;
+	scroll-padding: 2rem;
+	padding: 2rem 4rem;
+	max-width: 70rem;
+	margin-left: auto;
+	display: block;
+	border-left: 1px solid var(--text-black);
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height: calc(100vh - 7rem);
+	width: 100%;
+	max-width: 100%;
 }
 
 .prose-heading-1 {
-    font: 600 3.5rem/130% "Lora", serif;
-    padding-top: 4rem;
+	font: 600 3.5rem/130% 'Lora', serif;
+	padding-top: 4rem;
 }
 
 .prose-heading-1:not(:first-child) {
-    border-top: 2px solid var(--text-black);
-    padding-top: 3rem;
+	border-top: 2px solid var(--text-black);
+	padding-top: 3rem;
 }
 
 .prose-heading-2,
 .key-header {
-    font: 600 2.5rem/130% "Lora", serif;
-    margin: .5rem 0;
+	font: 600 2.5rem/130% 'Lora', serif;
+	margin: 0.5rem 0;
 }
 
 .prose-heading-2:not(.key-header .prose-heading-2) {
-    margin-top: 3rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--purple);
+	margin-top: 3rem;
+	padding-top: 1rem;
+	border-top: 1px solid var(--purple);
 }
 
 .prose-heading-3 {
-    font: 600 2rem/130% "Lora", sans-serif;
-    margin: .5rem 0;
+	font: 600 2rem/130% 'Lora', sans-serif;
+	margin: 0.5rem 0;
 }
 
 .prose-para {
-    max-width: 70ch;
-    font-weight: 400;
-    font-size: 1.6rem;
-    margin: .5rem 1rem;
+	max-width: 70ch;
+	font-weight: 400;
+	font-size: 1.6rem;
+	margin: 0.5rem 1rem;
 }
 
 li.prose-para {
-    margin-bottom: .3em;
+	margin-bottom: 0.3em;
 }
 
 .prose-para :is(.highlight) {
-    font-weight: 600;
+	font-weight: 600;
 }
 
 .prose-para :is(a, kbd, code) {
-    padding: 0 .5rem;
-    border-radius: 3px;
-    line-height: 160%;
+	padding: 0 0.5rem;
+	border-radius: 3px;
+	line-height: 160%;
 }
 
 .prose-para a,
 .prose-figure figcaption a {
-    background: var(--pink-light);
+	background: var(--pink-light);
 }
 
 .prose-para a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .prose-para kbd {
-    font: 600 16px/130% "Roboto Mono";
-    border: 1px solid var(--text-black);
+	font: 600 16px/130% 'Roboto Mono';
+	border: 1px solid var(--text-black);
 }
 
 .prose-para code {
-    font: 600 16px/130% "Roboto Mono";
-    background: var(--purple-light);
+	font: 600 16px/130% 'Roboto Mono';
+	background: var(--purple-light);
 }
 
-.subtopic-2>*:not(.prose-heading-3) {
-    margin-left: 2rem;
+.subtopic-2 > *:not(.prose-heading-3) {
+	margin-left: 2rem;
 }
 
 .prose-list li {
-    list-style: decimal;
-    list-style-position: outside;
-    margin-left: 2rem;
+	list-style: decimal;
+	list-style-position: outside;
+	margin-left: 2rem;
 }
 
 ul.prose-list li {
-    list-style: square;
+	list-style: square;
 }
 
 .prose-list li::marker {
-    color: var(--purple);
-    font-weight: 600;
+	color: var(--purple);
+	font-weight: 600;
 }
 
 .prose-list li :is(ul, ol) {
-    margin: 1rem 0 1rem 2rem;
+	margin: 1rem 0 1rem 2rem;
 }
 
 .prose-list li :is(ul, ol) li {
-    list-style: disc;
+	list-style: disc;
 }
 
 .sources *,
 .prose-figure figcaption {
-    font: italic 1.4rem/130% "Poppins", sans-serif;
+	font: italic 1.4rem/130% 'Poppins', sans-serif;
 }
-
 
 /* //////////////////////////// Figures in Prose */
 
 .prose-figure {
-    width: 100%;
-    height: 100%;
-    overflow-x: auto;
-    border: 1px solid var(--purple);
-    border-top: none;
-    border-bottom: none;
+	width: 100%;
+	height: 100%;
+	overflow-x: auto;
+	border: 1px solid var(--purple);
+	border-top: none;
+	border-bottom: none;
 }
 
 .prose-figure img {
-    padding: 2rem 1rem;
-    min-width: 50rem;
+	padding: 2rem 1rem;
+	min-width: 50rem;
 }
 
 .prose-figure figcaption {
-    min-width: 20ch;
-    max-width: 35ch;
-    padding: 1rem;
+	min-width: 20ch;
+	max-width: 35ch;
+	padding: 1rem;
 }
-
 
 /* //////////////////// KEY BOXES */
 
 .key {
-    border: 1.5px solid;
-    margin: 2rem 0;
-    border-radius: 20px;
-    padding: 2rem 1.5rem;
-    max-width: 70rem;
+	border: 1.5px solid;
+	margin: 2rem 0;
+	border-radius: 20px;
+	padding: 2rem 1.5rem;
+	max-width: 70rem;
 }
 
 .key-header {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    gap: 2rem;
-    margin-bottom: .5rem;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	gap: 2rem;
+	margin-bottom: 0.5rem;
 }
 
 .key-content {
-    margin-left: 4.5rem;
+	margin-left: 4.5rem;
 }
 
 .key.callout {
-    border-color: var(--pink);
+	border-color: var(--pink);
 }
 
 .key.tip,
 .key.simplification {
-    border-color: var(--purple);
+	border-color: var(--purple);
 }
 
 .key.definition {
-    border-color: var(--blue);
+	border-color: var(--blue);
 }
 
 .key.additonal-point,
 .key.mathematical-formula {
-    border-color: var(--text-black);
+	border-color: var(--text-black);
 }
 
 .key.mathematical-formula .key-content * {
-    font: italic 400 2.5rem/130% "Lora", serif;
+	font: italic 400 2.5rem/130% 'Lora', serif;
 }
 
 .key.code {
-    background: var(--code-box);
-    border-color: var(--smooth-dark);
-    border-radius: 2px;
+	background: var(--code-box);
+	border-color: var(--smooth-dark);
+	border-radius: 2px;
 }
 
 .key.code {
-    font: 500 16px/130% "Roboto Mono";
+	font: 500 16px/130% 'Roboto Mono';
 }
-
 
 /* *********** MEDIA QUERIES **************** */
 
 @media (max-width: 768px) {
-    .prose-index-wrapper {
-        display: block;
-        border: none;
-    }
-    .index-wrapper {
-        max-width: 100%;
-        max-height: 100%;
-        overflow: auto;
-    }
-    .topic-prose-wrapper {
-        padding: 2rem 0;
-        max-height: 100%;
-        border: none;
-    }
+	.prose-index-wrapper {
+		display: block;
+		border: none;
+	}
+	.index-wrapper {
+		max-width: 100%;
+		max-height: 100%;
+		overflow: auto;
+	}
+	.topic-prose-wrapper {
+		padding: 2rem 0;
+		max-height: 100%;
+		border: none;
+	}
 }

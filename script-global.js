@@ -58,13 +58,16 @@ for (let i = 0; i < submenu.length; i++) {
 
 let indexTitle = document.querySelectorAll(".index-title");
 
-// On HASH Change
-window.onhashchange = function() {
-    dropDown(
-        headerNavWrapper,
-        menuBtn,
-        "show-menu",
-        `<i class="bi bi-x-lg"></i>`,
-        `<i class="bi bi-grid"></i>`
-    );
-}
+let thisPageLinks = document.querySelectorAll(".submenu li");
+
+thisPageLinks.forEach(item => {
+    item.onclick = ()=>{
+        dropDown(
+            headerNavWrapper,
+            menuBtn,
+            "show-menu",
+            `<i class="bi bi-x-lg"></i>`,
+            `<i class="bi bi-grid"></i>`
+        );
+    }
+})
