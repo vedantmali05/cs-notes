@@ -3,7 +3,7 @@
 let header = document.querySelector(".notes-header");
 window.onscroll = function() {
     if (window.pageYOffset > 100) {
-        header.style.boxShadow = "0px 0px 10px var(--smooth-light)";
+        header.style.boxShadow = "0px 0px 10px 5px var(--smooth-light)";
     } else {
         header.style.boxShadow = "none";
     }
